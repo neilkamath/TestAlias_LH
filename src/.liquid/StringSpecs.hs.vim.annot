@@ -1,0 +1,6 @@
+1:1-1:1::StringSpecs.$trModule :: "GHC.Types.Module"
+13:1-13:10::StringSpecs.strLength :: "[GHC.Types.Char] -> {VV##0 : GHC.Types.Int | VV##0 >= 0}"
+13:16-13:17::lq_anf$##7205759403792800589 :: "{v : GHC.Prim.Int# | v == 0}"
+14:20-14:21::lq_anf$##7205759403792800591 :: "GHC.Types.Int"
+14:24-14:36::lq_anf$##7205759403792800592 :: "{v : GHC.Types.Int | v == strLength xs##aFp\n                     && v >= 0}"
+14:34-14:36::xs :: "{v : [GHC.Types.Char] | v == xs##aFp\n                        && len v >= 0}"

@@ -1,0 +1,18 @@
+cabal-version:      3.0
+name:               liquid-haskell-test
+version:            0.1.0.0
+synopsis:           Testing LiquidHaskell Type Aliases
+description:        Demo for Unqualified Type Aliases in LiquidHaskell
+author:             cooljackwerty
+maintainer:         your.email@example.com
+category:           Testing
+build-type:         Simple
+
+executable liquid-haskell-test
+    main-is:          Main.hs
+    other-modules:    ListSpecs
+                    , StringSpecs
+    build-depends:    base,
+                    liquidhaskell ==0.9.4.7.0
+    hs-source-dirs:   src
+    default-language: Haskell2010 

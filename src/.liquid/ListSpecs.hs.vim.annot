@@ -1,0 +1,6 @@
+1:1-1:1::ListSpecs.$trModule :: "GHC.Types.Module"
+13:1-13:4::ListSpecs.len :: "forall a . [a] -> {VV##0 : GHC.Types.Int | VV##0 >= 0}"
+13:10-13:11::lq_anf$##7205759403792800598 :: "{v : GHC.Prim.Int# | v == 0}"
+14:14-14:15::lq_anf$##7205759403792800600 :: "GHC.Types.Int"
+14:18-14:24::lq_anf$##7205759403792800601 :: "{v : GHC.Types.Int | v == len xs##aFr\n                     && v >= 0}"
+14:22-14:24::xs :: "{v : [a] | v == xs##aFr\n           && len v >= 0}"
