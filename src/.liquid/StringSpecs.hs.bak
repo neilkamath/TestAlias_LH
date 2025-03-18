@@ -4,7 +4,7 @@
 
 module StringSpecs where
 
--- Define a type alias for non-negative integers (conflicting with ListSpecs)
+-- Define a type alias for non-negative integers
 {-@ type INat = {v:Int | v >= 0} @-}
 
 -- Function to get string length

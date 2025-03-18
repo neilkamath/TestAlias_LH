@@ -16,7 +16,7 @@ import StringSpecs
 -- "ListSpecs.INat is not in scope"
 {-@ demoFunc :: [a] -> ListSpecs.INat @-}
 demoFunc :: [a] -> Int
-demoFunc xs = len xs
+demoFunc = len
 
 main :: IO ()
 main = do

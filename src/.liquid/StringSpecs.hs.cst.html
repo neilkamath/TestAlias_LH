@@ -16,16 +16,16 @@ Put mouse over identifiers to see inferred types
 <span class=hs-linenum> 4: </span>
 <span class=hs-linenum> 5: </span><span class='hs-keyword'>module</span> <span class='hs-conid'>StringSpecs</span> <span class='hs-keyword'>where</span>
 <span class=hs-linenum> 6: </span>
-<span class=hs-linenum> 7: </span><span class='hs-comment'>-- Define a type alias for non-negative integers (conflicting with ListSpecs)</span>
+<span class=hs-linenum> 7: </span><span class='hs-comment'>-- Define a type alias for non-negative integers</span>
 <span class=hs-linenum> 8: </span><span class='hs-keyword'>{-@</span> <span class='hs-keyword'>type</span> <span class='hs-conid'>INat</span> <span class='hs-keyglyph'>=</span> <span class='hs-layout'>{</span><span class='hs-varid'>v</span><span class='hs-conop'>:</span><span class='hs-conid'>Int</span> <span class='hs-keyglyph'>|</span> <span class='hs-varid'>v</span> <span class='hs-varop'>&gt;=</span> <span class='hs-num'>0</span><span class='hs-layout'>}</span> <span class='hs-keyword'>@-}</span>
 <span class=hs-linenum> 9: </span>
 <span class=hs-linenum>10: </span><span class='hs-comment'>-- Function to get string length</span>
 <span class=hs-linenum>11: </span><span class='hs-keyword'>{-@</span> <span class='hs-varid'>strLength</span> <span class='hs-keyglyph'>::</span> <span class='hs-conid'>String</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>INat</span> <span class='hs-keyword'>@-}</span>
 <span class=hs-linenum>12: </span><span class='hs-definition'>strLength</span> <span class='hs-keyglyph'>::</span> <span class='hs-conid'>String</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>Int</span>
 <span class=hs-linenum>13: </span><a class=annot href="#"><span class=annottext>lq_tmp$x##282:[GHC.Types.Char] -&gt; {VV##0 : GHC.Types.Int | VV##0 &gt;= 0}</span><span class='hs-definition'>strLength</span></a> <span class='hs-conid'>[]</span> <span class='hs-keyglyph'>=</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##308 : GHC.Prim.Int# | lq_tmp$x##308 == 0}</span><span class='hs-num'>0</span></a>
-<span class=hs-linenum>14: </span><span class='hs-definition'>strLength</span> <span class='hs-layout'>(</span><span class='hs-keyword'>_</span><span class='hs-conop'>:</span><span class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>=</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##354 : GHC.Types.Int | lq_tmp$x##354 == GHC.Types.I# lq_anf$##7205759403792800590##d1OK
-                                 &amp;&amp; lq_tmp$x##354 == (lq_anf$##7205759403792800590##d1OK : int)}</span><span class='hs-num'>1</span></a> <span class='hs-varop'>+</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##363 : GHC.Types.Int | lq_tmp$x##363 == StringSpecs.strLength xs##aFp
-                                 &amp;&amp; lq_tmp$x##363 &gt;= 0}</span><span class='hs-varid'>strLength</span></a> <a class=annot href="#"><span class=annottext>{lq_tmp$x##371 : [GHC.Types.Char] | lq_tmp$x##371 == xs##aFp
+<span class=hs-linenum>14: </span><span class='hs-definition'>strLength</span> <span class='hs-layout'>(</span><span class='hs-keyword'>_</span><span class='hs-conop'>:</span><span class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>=</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##354 : GHC.Types.Int | lq_tmp$x##354 == GHC.Types.I# lq_anf$##7205759403792803055##d2sv
+                                 &amp;&amp; lq_tmp$x##354 == (lq_anf$##7205759403792803055##d2sv : int)}</span><span class='hs-num'>1</span></a> <span class='hs-varop'>+</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##363 : GHC.Types.Int | lq_tmp$x##363 == StringSpecs.strLength xs##a2rY
+                                 &amp;&amp; lq_tmp$x##363 &gt;= 0}</span><span class='hs-varid'>strLength</span></a> <a class=annot href="#"><span class=annottext>{lq_tmp$x##371 : [GHC.Types.Char] | lq_tmp$x##371 == xs##a2rY
                                     &amp;&amp; len lq_tmp$x##371 &gt;= 0}</span><span class='hs-varid'>xs</span></a></pre>
 </body>
 </html>
